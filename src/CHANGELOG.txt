@@ -1,0 +1,32 @@
+/******************************************************************************\
+|                                                                              |
+|                                 CHANGELOG.txt                                |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        Copyright (C) 2016-2017 Megahed Labs, www.abemegahed.com              |
+|        Proprietary and confidential                                          |
+|                                                                              |
+|        Unauthorized copying of the files contained in this source            |
+|        code distribution is strictly prohibited.                             |
+|                                                                              |
+\******************************************************************************/
+
+06-19-2018
+- Integrated friend finder into friend browser.
+- Implemented back, forward buttons, history for friend browser.
+- Added styling for sidebar lists
+- Added ability to remove friends
+
+06-22-2018
+- Added notifications and connection requests views (for mobile)
+- Added notifications and connection requests to launcher
+
+06-25-2018
+- Added news feed / user posts view
+
+06-26-2018
+- Added the ability to add images to posts
+
+06-27-2018
+- Added the ability to collapse / expand list of posts

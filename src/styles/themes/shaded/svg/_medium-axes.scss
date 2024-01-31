@@ -1,0 +1,38 @@
+/******************************************************************************\
+|                                                                              |
+|                              _medium-axes.scss                               |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines the SVG CSS element styles for this application.         |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2015-2018, Megahed Labs LLC, www.optipedia.org          |
+\******************************************************************************/
+
+//
+// colors
+//
+
+$axis-color: black;
+$dark-axis-color: white;
+
+//
+// styles
+//
+
+body:not(.binary) {
+
+	.viewport {
+		.axis {
+			stroke: $axis-color;
+		}
+	}
+
+	&.dark .viewport,
+	.viewport.dark {
+		.axis {
+			stroke: $dark-axis-color;
+		}
+	}
+}

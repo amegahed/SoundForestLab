@@ -1,0 +1,104 @@
+/******************************************************************************\
+|                                                                              |
+|                             _dialog-alerts.scss                              |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines the dom and svg visual styles for this application.      |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2023, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+
+//
+// variables
+//
+
+$small-alert-width: 250px;
+$small-prompt-width: 300px;
+
+//
+// styles
+//
+
+.modals {
+	.modal {
+		&.alert, &.notify, &.confirm, &.error, &.prompt {
+			.modal-content {
+				.modal-body {
+
+					> .icon {
+						display: inline-block;
+						text-align: center;
+						float: left;
+						margin-right: 20px;
+
+						> i {
+							font-size: 300%;
+							margin: 10px;
+						}
+					}
+
+					p {
+						word-break: break-word;
+					}
+				}
+			}
+		}
+	}
+
+	//
+	// small alerts
+	//
+
+	&.small-alerts {
+		.modal {
+
+			&.alert, &.notify, &.confirm {
+				.modal-dialog {
+					width: $small-alert-width;
+					min-width: $small-alert-width;
+				}
+			}
+
+			&.prompt {
+				.modal-dialog {
+					width: $small-prompt-width;
+					min-width: $small-prompt-width;
+				}
+			}
+
+			&.alert, &.notify, &.confirm, &.prompt {
+				.modal-dialog {
+					.modal-content {
+						.modal-body {
+							text-align: center;
+
+							> .icon {
+								float: none;
+								margin-right: 0;
+							}
+						}
+
+						.modal-footer {
+							.buttons {
+								width: 100%;
+								flex-direction: row;
+
+								button {
+									flex-grow: 1;
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,165 @@
+/******************************************************************************\
+|                                                                              |
+|                                 _profile.scss                                |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2023, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+
+@use "../bootstrap/variables";
+
+//
+// variables
+//
+
+$profile-photo-small-size: 200px;
+$profile-photo-medium-size: 200px;
+$profile-photo-large-size: 200px;
+$profile-photo-size:$profile-photo-medium-size;
+
+//
+// styles
+//
+
+.profile.photo {
+	position: relative;
+	background-color: black;
+	background-size: cover; 
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: $profile-photo-medium-size;
+	height: $profile-photo-medium-size;
+	image-rendering: auto;
+	margin: -10px auto;
+
+	.thumbnail.missing i {
+		font-size: $profile-photo-medium-size;
+	}
+
+	.buttons {
+		margin-top: 5px;
+	}
+
+	&.rounded {
+		border-radius: 15px;
+	}
+}
+
+//
+// cover / background photo
+//
+
+.cover.photo {
+	position: relative;
+	background-size: cover; 
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	image-rendering: auto;
+	padding: 30px;
+
+	> .buttons {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+
+		.btn {
+			margin-top: 0;
+		}
+	}
+}
+
+.round {
+	.cover.photo {
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+	}
+}
+
+.rounded {
+	.cover.photo {
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+}
+
+//
+// medium styles
+//
+
+/*
+@media (max-width: variables.$screen-sm-min) {
+	.page {
+		.profile.photo {
+			width: $profile-photo-small-size;
+			height: $profile-photo-small-size;
+
+			.thumbnail.missing i {
+				font-size: $profile-photo-small-size;
+			}
+		}
+	}
+
+	.modal-dialog {
+		.profile.photo {
+			width: $profile-photo-small-size;
+			height: $profile-photo-small-size;
+
+			.thumbnail.missing i {
+				font-size: $profile-photo-small-size;
+			}
+		}
+	}
+}
+*/
+
+//
+// large styles
+//
+
+@media (min-width: variables.$screen-md-min) {
+	.page {
+		.profile.photo {
+			width: $profile-photo-large-size;
+			height: $profile-photo-large-size;
+
+			.thumbnail.missing i {
+				font-size: $profile-photo-large-size;
+			}
+		}
+	}
+
+	/*
+	.modal-dialog {
+		.profile.photo {
+			width: $profile-photo-medium-size;
+			height: $profile-photo-medium-size;
+
+			.thumbnail.missing i {
+				font-size: $profile-photo-medium-size;
+			}
+		}
+	}
+	*/
+}
+
+//
+// mobile styles
+//
+
+body[device="phone"], body[device="tablet"] {
+	.page {
+		.cover.photo {
+			margin: -10px;
+			margin-bottom: 0;
+		}	
+	}
+}

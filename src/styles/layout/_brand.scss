@@ -1,0 +1,203 @@
+/******************************************************************************\
+|                                                                              |
+|                                 _brand.scss                                  |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2023, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+
+@use "../bootstrap/variables";
+@use "../colors/text-colors";
+
+//
+// variables
+//
+
+$brand-shadow: 3px 3px 10px rgba(black, 50%);
+
+//
+// font sizes
+//
+
+$large-font-size: 7em;
+$large-long-font-size: 6em;
+
+$medium-large-font-size: 6em;
+$medium-large-long-font-size: 5em;
+
+$medium-font-size: 5em;
+$medium-long-font-size: 4em;
+
+$small-font-size: 3.5em;
+$small-long-font-size: 3em;
+
+$extra-small-font-size: 2.5em;
+$extra-small-long-font-size: 2em;
+
+//
+// styles
+//
+
+.welcome.page {
+	.contents {
+		.masthead {
+			.splash {
+				.brand {
+					display: inline-block;
+					margin: auto;
+					margin-top: 0;
+					border-bottom: none;
+
+					// add shadows
+					//
+					&.shadowed {
+						text-shadow: $brand-shadow;
+					}
+
+					// brand components
+					//
+					span {
+						line-height: 1em;
+
+						// text outlines
+						//
+						&.white-outlined {
+							text-shadow: text-colors.$white-extra-bold-outline;
+						}
+						&.black-outlined {
+							text-shadow: text-colors.$black-extra-bold-outline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//
+// large 
+//
+
+@media (min-width: variables.$screen-lg-min) {
+	.welcome.page {
+		.contents {
+			.masthead {
+				.splash {
+					.brand {
+						font-size: $large-font-size;
+
+						&.long {
+							font-size: $large-long-font-size;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//
+// medium large
+//
+
+@media (max-width: variables.$screen-lg-min) {
+	.welcome.page {		
+		.contents {
+			.masthead {
+				.splash {
+					.brand {
+						font-size: $medium-large-font-size;
+
+						&.long {
+							font-size: $medium-large-long-font-size;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//
+// medium 
+//
+
+@media (max-width: 1024px) {
+	.welcome.page {		
+		.contents {
+			.masthead {
+				.splash {
+					.brand {
+						font-size: $medium-font-size;
+
+						&.long {
+							font-size: $medium-long-font-size;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//
+// small
+//
+
+@media (max-width: variables.$screen-sm-min) {
+	.welcome.page {
+		.contents {
+			.masthead {
+				.splash {
+					.brand {
+						font-size: $small-font-size;
+
+						// text outlines
+						//
+						&.white-outlined {
+							text-shadow: text-colors.$white-bold-outline;
+						}
+						&.black-outlined {
+							text-shadow: text-colors.$black-bold-outline;
+						}
+
+						&.long {
+							font-size: $small-long-font-size;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//
+// extra small styles
+//
+
+@media (max-width: variables.$screen-xs-min) {
+	.welcome.page {
+		> .contents {
+			.masthead {
+				.splash {
+					.brand {
+						font-size: $extra-small-font-size;
+
+						&.long {
+							font-size: $extra-small-long-font-size;	
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,164 @@
+/******************************************************************************\
+|                                                                              |
+|                            _medium-nav-bars.scss                             |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2023, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+
+@use "../../../../colors/colors";
+@use "../colors/medium-branding";
+
+//
+// colors
+//
+
+$color: colors.$light-grey;
+$hover-color: white;
+$active-color: white;
+$brand-color: white;
+$background-color: colors.$ultra-dark-grey;
+$active-background-color: medium-branding.$primary-color;
+$border-color: colors.$medium-grey;
+
+$indicator-background-color: colors.$very-very-light-grey;
+$indicator-border-color: $border-color;
+
+//
+// styles
+//
+
+body:not(.binary) {
+	.navbar-inverse {
+		background-color: $background-color;
+
+		//
+		// brand
+		//
+
+		.brand {
+			color: $brand-color;
+		}
+
+		//
+		// navigation
+		//
+
+		.navbar-nav {
+			color: $color;
+
+			> li {
+
+				//
+				// inactive state
+				//
+
+				&:not(.active):not(.open) {
+					> a, > a:focus {
+						color: inherit;
+
+						//
+						// hover state
+						//
+
+						&:hover:not(.colored) {
+							color: $hover-color;
+
+							i, label {
+								color: $hover-color;
+							}
+						}
+					}
+				}
+
+				//
+				// active state
+				//
+
+				&.active {
+					background-color: $active-background-color;
+
+					> a, > a:hover, > a:focus {
+						color: $active-color;
+						background-color: unset;
+
+						i, label {
+							color: $active-color;
+						}
+					}
+				}
+
+				//
+				// open state
+				//
+
+				&.open:not(.colored) {
+					background-color: $active-background-color;
+
+					> a, > a:focus {
+						color: $active-color;
+
+						i, label {
+							color: $active-color;
+						}
+					}
+				}
+			}
+
+			//
+			// profile thumbnails
+			//
+
+			.thumbnail.missing {
+
+				// use header icon color
+				//
+				i {
+					color: inherit;
+				}
+			}
+
+			//
+			// nav bar indicators
+			//
+
+			.indicator {
+				.bar {
+					background-color: $indicator-background-color;
+					border-color: $indicator-border-color;
+				}
+			}
+
+			//
+			// apps bar
+			//
+
+			&.apps {
+				border-color: $border-color;
+
+				> li {
+					&.current {
+						> a {
+							> i {
+								color: white !important;
+							}
+
+							> svg {
+								fill: white !important;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

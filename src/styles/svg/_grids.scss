@@ -1,0 +1,32 @@
+/******************************************************************************\
+|                                                                              |
+|                                  _grids.scss                                 |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines the SVG CSS element styles for this application.         |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2015-2018, Megahed Labs LLC, www.optipedia.org          |
+\******************************************************************************/
+
+//
+// styles
+//
+
+svg {
+
+	.grid {
+		pointer-events: none;
+	}
+
+	pattern svg path {
+		opacity: 0.5;
+		fill: none;
+
+		// non-scaling stroke has problems in Chrome
+		//
+		// vector-effect: non-scaling-stroke;
+		// stroke-width: 1;
+	}
+}

@@ -1,0 +1,150 @@
+/******************************************************************************\
+|                                                                              |
+|                             _dark-item-lists.scss                            |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines various CSS styles used in this application.             |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2023, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+
+@use "../../../../colors/text-colors";
+@use "../../medium/items/medium-item-lists";
+@use "../navs/dark-selection";
+
+//
+// colors
+//
+
+$odd-item-background-color: medium-item-lists.$odd-item-background-color;
+$info-color: text-colors.$light-color;
+
+//
+// styles
+//
+
+body:not(.binary).dark {
+	.item-list {
+
+		//
+		// dark items
+		//
+
+		.item {
+			> .info {
+
+				//
+				// list item specifics
+				//
+
+				> .specifics {
+					.details {
+						color: $info-color;
+
+						i.fa-info-circle {
+							color: $info-color;
+						}
+					}
+				}
+			}
+		}
+
+		//
+		// dark highlighted items
+		//
+
+		.item.highlighted {
+			> .info {
+				background-color: dark-selection.$highlight-color;
+
+				.name {
+
+					//
+					// uneditable names
+					//
+
+					&:not([contenteditable="true"]) {
+						color: white;
+						background-color: dark-selection.$highlight-color;
+					}
+				}
+
+				.details {
+					color: white;
+					background-color: dark-selection.$highlight-color;
+				}
+			}
+		}
+
+		//
+		// dark selected items
+		//
+
+		.item.selected {
+			> .info {
+				background-color: dark-selection.$select-color;
+
+				.icon {
+
+					i {
+						color: dark-selection.$select-color;
+					}
+				}
+
+				.name {
+
+					//
+					// uneditable names
+					//
+
+					&:not([contenteditable="true"]) {
+						color: white;
+						background-color: dark-selection.$select-color;
+					}
+				}
+
+				.details {
+					color: white;
+					background-color: dark-selection.$select-color;
+				}
+			}
+		}
+
+		//
+		// dark zebra striping
+		//
+
+		&:not(.inline) {
+
+			.item:nth-child(odd):not(.selected):not(.highlighted) {
+				> div.info {
+					background-color: $odd-item-background-color;
+				}
+			}
+		}
+
+		//
+		// dragged file and directory styles
+		//
+
+		.drag-image {
+
+			//
+			// no zebra striping
+			//
+
+			.item:nth-child(odd):not(.selected):not(.highlighted) {
+				> .info {
+					background: none;
+				}
+			}
+		}
+	}
+}

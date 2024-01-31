@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<LookAt>
+	<longitude>-98.5795</longitude>
+	<latitude>39.82830</latitude>
+	<zoomLevel>2.00</zoomLevel>
+</LookAt>
+
+<Placemark>
+	<name>The Capitol</name>
+	<description>The US Capitol Building</description>
+	<Point>
+		<coordinates>-77.00887,38.88997,0</coordinates>
+	</Point>
+	<zoomLevel>8.00</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>The Center</name>
+	<description>The geographical center of the continental United States.</description>
+	<Point>
+		<coordinates>-98.5795,39.82830,0</coordinates>
+	</Point>
+	<zoomLevel>2.00</zoomLevel>
+</Placemark>
+
+</Document>
+</kml>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<LookAt>
+	<longitude>-122.4469</longitude>
+	<latitude>37.77010</latitude>
+	<zoomLevel>6.27</zoomLevel>
+</LookAt>
+
+<Placemark>
+	<name>Haight-Asburry</name>
+	<description>The famous corner!</description>
+	<Point>
+		<coordinates>-122.4469,37.77010,0</coordinates>
+	</Point>
+	<zoomLevel>10.0</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>The Golden Gate Bridge</name>
+	<description>The historic and beautiful Golden Gate.</description>
+	<Point>
+		<coordinates>-122.4782,37.81646,0</coordinates>
+	</Point>
+	<zoomLevel>7.41</zoomLevel>
+</Placemark>
+
+</Document>
+</kml>

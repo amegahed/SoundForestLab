@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<LookAt>
+	<longitude>-89.39194</longitude>
+	<latitude>43.06678</latitude>
+	<zoomLevel>6.94</zoomLevel>
+</LookAt>
+
+<Placemark>
+	<name>Camp Randall</name>
+	<description>Home of the Badgers!</description>
+	<Point>
+		<coordinates>-89.41268,43.06972,0</coordinates>
+	</Point>
+	<zoomLevel>8.50</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>Capitol Building</name>
+	<description>The Wisconsin State Capitol</description>
+	<Point>
+		<coordinates>-89.38415,43.07469,0</coordinates>
+	</Point>
+	<zoomLevel>9.00</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>The Coliseum</name>
+	<description>The center of the Alliant Energy Center complex.</description>
+	<Point>
+		<coordinates>-89.37893,43.04705,0</coordinates>
+	</Point>
+	<zoomLevel>8.73</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>Vilas Park</name>
+	<description>Visit the magnificent shoe!</description>
+	<Point>
+		<coordinates>-89.41334,43.06000,0</coordinates>
+	</Point>
+	<zoomLevel>8.49</zoomLevel>
+</Placemark>
+
+</Document>
+</kml>

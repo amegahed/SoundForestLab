@@ -1,0 +1,92 @@
+/******************************************************************************\
+|                                                                              |
+|                             _dark-menu-bars.scss                             |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines the SVG DOM element styles for this application.         |
+|                                                                              |
+|        Author(s): Abe Megahed                                                |
+|                                                                              |
+|        This file is subject to the terms and conditions defined in           |
+|        'LICENSE.txt', which is part of this source code distribution.        |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2016-2023, Megahed Labs LLC, www.sharedigm.com          |
+\******************************************************************************/
+
+@use "../../../../colors/colors";
+@use "../navs/dark-menus";
+
+//
+// styles
+//
+
+body:not(.binary).dark {
+	.menu-bar {
+	
+		> ul.nav-menus {
+
+			> li {
+				> a {
+					color: dark-menus.$text-color;
+					background: none;
+
+					> i {
+						color: dark-menus.$icon-color;
+					}
+				}
+
+				&:not(.disabled) {
+					> a {
+						&:hover, &:active {
+							> i {
+								@include colors.glow();
+							}
+						}
+					}
+				}
+			}
+
+			//
+			// disabled menu bar items
+			//
+
+			> li.disabled {
+				a {
+					color: dark-menus.$disabled-text-color;
+					background: none;
+
+					> i {
+						color: dark-menus.$disabled-text-color;
+					}
+				}
+			}
+		}
+	}
+
+	//
+	// dark transparent desktop menu bar items
+	//
+
+	&.transparent, &.translucent {
+		&.menu-margins #desktop {
+			.header-bar {
+				.menu-bar {
+					> ul.nav-menus {
+
+						> li.open {
+							> a, > a:focus, > a:hover, > a:active {
+								color: white;
+
+								i {
+									color: white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<LookAt>
+	<longitude>-80.61057</longitude>
+	<latitude>28.61779</latitude>
+	<zoomLevel>7.04</zoomLevel>
+</LookAt>
+
+<Placemark>
+	<name>Pad 39a</name>
+	<description>The historic launch site of Apollo 11.</description>
+	<Point>
+		<coordinates>-80.621,28.62710,0</coordinates>
+	</Point>
+	<zoomLevel>8.24</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>Pad 39b</name>
+	<description>The other historic launch site.</description>
+	<Point>
+		<coordinates>-80.60427,28.60840,0</coordinates>
+	</Point>
+	<zoomLevel>8.10</zoomLevel>
+</Placemark>
+
+</Document>
+</kml>

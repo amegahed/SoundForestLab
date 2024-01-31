@@ -1,0 +1,13 @@
+/******************************************************************************\
+|                                                                              |
+|                                 LICENSE.txt                                  |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        Copyright (C) 2016-2017 Megahed Labs, www.abemegahed.com              |
+|        Proprietary and confidential                                          |
+|                                                                              |
+|        Unauthorized copying of the files contained in this source            |
+|        code distribution is strictly prohibited.                             |
+|                                                                              |
+\******************************************************************************/

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<LookAt>
+	<longitude>-87.61974</longitude>
+	<latitude>41.87570</latitude>
+	<zoomLevel>7.24</zoomLevel>
+</LookAt>
+
+<Placemark>
+	<name>Adler Planetarium</name>
+	<description>Next best thing to the actual sky.</description>
+	<Point>
+		<coordinates>-87.60677,41.86635,0</coordinates>
+	</Point>
+	<zoomLevel>9.78</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>Art Institute</name>
+	<description></description>
+	<Point>
+		<coordinates>-87.62219,41.87957,0</coordinates>
+	</Point>
+	<zoomLevel>8.97</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>Sears Tower</name>
+	<description>The world's tallest building from 1974 to 2000. </description>
+	<Point>
+		<coordinates>-87.63587,41.87879,0</coordinates>
+	</Point>
+	<zoomLevel>9.00</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>The Bean</name>
+	<description>Cloud Gate sculpture by Anish Kapoor. </description>
+	<Point>
+		<coordinates>-87.62333,41.88269,0</coordinates>
+	</Point>
+	<zoomLevel>9.00</zoomLevel>
+</Placemark>
+
+<Placemark>
+	<name>The Field Museum</name>
+	<description>See Sue, the T-Rex!</description>
+	<Point>
+		<coordinates>-87.61708,41.86609,0</coordinates>
+	</Point>
+	<zoomLevel>9.00</zoomLevel>
+</Placemark>
+
+</Document>
+</kml>

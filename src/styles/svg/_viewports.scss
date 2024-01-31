@@ -1,0 +1,34 @@
+/******************************************************************************\
+|                                                                              |
+|                                _viewports.scss                               |
+|                                                                              |
+|******************************************************************************|
+|                                                                              |
+|        This defines the SVG CSS element styles for this application.         |
+|                                                                              |
+|******************************************************************************|
+|        Copyright (C) 2015-2018, Megahed Labs LLC, www.optipedia.org          |
+\******************************************************************************/
+
+@use "../layout/performance";
+
+//
+// styles
+//
+
+.viewport {
+
+	// use hardware acceleration
+	//
+	@include performance.acceleration;
+
+	//
+	// disable marker interactions
+	//
+
+	&.unclickable {
+		.marker {
+			pointer-events: none;
+		}
+	}
+}
