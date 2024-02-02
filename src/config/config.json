@@ -7,18 +7,18 @@
 
 	"storage": {
 		"dropbox": {
-			"appKey": "qum9scemxpdx70s"
+			"appKey": null
 		},
 
 		"google": {
-			"developerKey": "AIzaSyBXDjIsp_jO3RT9vkKsxP9YVLKlDeT2nkA",
-			"clientId": "48944764740-v35g7iedpj4cq27pepaon1d4cve9945a.apps.googleusercontent.com"
+			"developerKey": null,
+			"clientId": null
 		}
 	},
 
 	"mapping": {
 		"bingmaps": {
-			"server": "https://t2.ssl.ak.dynamic.tiles.virtualearth.net/comp/ch"
+			"server": null
 		},
 
 		"microsoftmaps": {
@@ -35,7 +35,7 @@
 
 		"accuweather": {
 			"server": "https://api.accuweather.com/maps/v1/models/gfs/zxy",
-			"appKey": "de13920f574d420984d3080b1fa6132b"
+			"appKey": null
 		},
 
 		"aviationweather": {
@@ -44,14 +44,14 @@
 
 		"mapbox": {
 			"server": "https://a.tiles.mapbox.com/v4/mapbox.terrain-rgb",
-			"appKey": "pk.eyJ1IjoiYW1lZ2FoZWQiLCJhIjoiY2w5MzlzdG50MXJvYzN1cGN0M3F0dGFpcSJ9.M2Ryya5rKKi258HfE5ssYg"
+			"appKey": null
 		}
 	},
 
 	"geocoding": {
 		"google": {
 			"server": "https://maps.googleapis.com/maps/api/geocode/json",
-			"apiKey": "AIzaSyBhaKrkC_e5g-6MQH_LmbwtPeU1E3W6Z_0"
+			"apiKey": null
 		},
 
 		"us_census": {
@@ -63,7 +63,7 @@
 	"autocomplete": {
 		"google": {
 			"server": "https://maps.googleapis.com/maps/api/place/autocomplete/json",
-			"apiKey": "AIzaSyBhaKrkC_e5g-6MQH_LmbwtPeU1E3W6Z_0"
+			"apiKey": null
 		}
 	},
 	
